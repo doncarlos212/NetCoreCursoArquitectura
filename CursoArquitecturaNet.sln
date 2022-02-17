@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoArquitecturaNet", "CursoArquitecturaNet\CursoArquitecturaNet.csproj", "{9BF4AF81-A258-49FF-83A1-114D8C98AFB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoArquitecturaNet.WebApi", "CursoArquitecturaNet\CursoArquitecturaNet.WebApi.csproj", "{9BF4AF81-A258-49FF-83A1-114D8C98AFB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoArquitecturaNet.Infraestructure", "CursoArquitecturaNet.Infraestructure\CursoArquitecturaNet.Infraestructure.csproj", "{44E92005-E150-4BAA-A878-E98B4F88CA9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoArquitecturaNet.Core", "CursoArquitecturaNet.Core\CursoArquitecturaNet.Core.csproj", "{A5F24B44-9D0E-4B97-B523-6F3C7867C636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoArquitecturaNet.Application", "CursoArquitecturaNet.Application\CursoArquitecturaNet.Application.csproj", "{9148099B-EA4F-48F5-917E-63988497B830}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{9BF4AF81-A258-49FF-83A1-114D8C98AFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BF4AF81-A258-49FF-83A1-114D8C98AFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BF4AF81-A258-49FF-83A1-114D8C98AFB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E92005-E150-4BAA-A878-E98B4F88CA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E92005-E150-4BAA-A878-E98B4F88CA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E92005-E150-4BAA-A878-E98B4F88CA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E92005-E150-4BAA-A878-E98B4F88CA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F24B44-9D0E-4B97-B523-6F3C7867C636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F24B44-9D0E-4B97-B523-6F3C7867C636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F24B44-9D0E-4B97-B523-6F3C7867C636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F24B44-9D0E-4B97-B523-6F3C7867C636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9148099B-EA4F-48F5-917E-63988497B830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9148099B-EA4F-48F5-917E-63988497B830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9148099B-EA4F-48F5-917E-63988497B830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9148099B-EA4F-48F5-917E-63988497B830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
