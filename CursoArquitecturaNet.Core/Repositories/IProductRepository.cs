@@ -12,6 +12,6 @@ namespace CursoArquitecturaNet.Core.Repositories
     {
         Task<IEnumerable<Product>> GetProductListAsync();
         Task<IEnumerable<Product>> GetProductByNameAsync(string productName);
-        Task<IEnumerable<Product>> GetProductByCategoryAsync(int categoryId);
+        Task<IEnumerable<Product>> GetProductByCategoryAsync(int categoryId); //Esta no tiene specificacion, por eso el producto tiene el category ID.
     }
 }
