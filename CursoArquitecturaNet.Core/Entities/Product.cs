@@ -12,17 +12,14 @@ namespace CursoArquitecturaNet.Core.Entities
         public string ProductName { get; set; }        
         public decimal? UnitPrice { get; set; }
         public short? UnitsInStock { get; set; }
-        public short? UnitsOnOrder { get; set; }                
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }
-        public static Product Create(int productId, int categoryId, string name, decimal? unitPrice = null,
-                                     short? unitsInStock = null, short? unitsOnOrder = null, short? reorderLevel = null,
-                                     bool discontinued = false)
+        public short? UnitsOnOrder { get; set; }               
+
+        public static Product Create(int productId, string name, decimal? unitPrice = null,
+                                     short? unitsInStock = null, short? unitsOnOrder = null)
         {
             var product = new Product
             {
-                Id = productId,
-                CategoryId = categoryId,
+                Id = productId,               
                 ProductName = name,
                 UnitPrice = unitPrice,
                 UnitsInStock = unitsInStock,

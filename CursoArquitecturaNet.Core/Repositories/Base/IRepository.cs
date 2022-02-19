@@ -1,5 +1,4 @@
 ﻿using CursoArquitecturaNet.Core.Entities.Base;
-using CursoArquitecturaNet.Core.Specificactions.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
