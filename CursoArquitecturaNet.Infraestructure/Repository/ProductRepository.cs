@@ -15,26 +15,13 @@ namespace CursoArquitecturaNet.Infraestructure.Repository
     {
         public ProductRepository(CursoArquitecturaNetContext dbContext) : base(dbContext)
         {
-        }
-
-        public async Task<IEnumerable<Product>> GetProductByCategoryAsync(int categoryId)
-        {
-            return await dbContext.Products
-                 .Where(x => x.CategoryId == categoryId)
-                 .ToListAsync();
-        }
+        }   
 
         public async Task<IEnumerable<Product>> GetProductByNameAsync(string productName)
         {
             return await dbContext.Products
-                .Where(x => x.ProductName.Contains(productName))
-                .Include(x => x.Category)
+                .Where(x => x.ProductName.Contains(productName))              
                 .ToListAsync();
-        }
-
-        public async Task<IEnumerable<Product>> GetProductListAsync()
-        {
-            return await GetAllAsync(); //Ver si necesito los includes.
-        }
+        }        
     }
 }
