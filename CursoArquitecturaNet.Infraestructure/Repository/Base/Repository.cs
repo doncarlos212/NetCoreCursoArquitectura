@@ -1,6 +1,5 @@
 ﻿using CursoArquitecturaNet.Core.Entities.Base;
 using CursoArquitecturaNet.Core.Repositories.Base;
-using CursoArquitecturaNet.Core.Specificactions.Base;
 using CursoArquitecturaNet.Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
