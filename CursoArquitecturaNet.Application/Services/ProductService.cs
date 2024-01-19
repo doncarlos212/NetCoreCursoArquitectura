@@ -62,6 +62,12 @@ namespace CursoArquitecturaNet.Application.Services
             if (editProduct == null)
                 throw new ApplicationException($"Entity could not be loaded.");
 
+            editProduct.Id = product.Id;
+            editProduct.ProductName = product.ProductName;
+            editProduct.UnitPrice = product.UnitPrice;
+            editProduct.UnitsInStock = product.UnitsInStock;
+            editProduct.UnitsOnOrder = product.UnitsOnOrder;
+
             await productRepository.UpdateAsync(editProduct);
         }
 

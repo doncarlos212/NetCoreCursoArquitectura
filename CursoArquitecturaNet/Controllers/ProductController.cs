@@ -19,7 +19,7 @@ namespace CursoArquitecturaNet.WebApi.Controllers
             this.productService = productService;
         }
 
-        [HttpGet("{productName}")]
+        [HttpGet("GetProductByName/{productName}")]
         public async Task<IEnumerable<ProductDTO>> GetProducts(string productName)
         {
             if (string.IsNullOrWhiteSpace(productName))
@@ -34,7 +34,7 @@ namespace CursoArquitecturaNet.WebApi.Controllers
             return mappedByName;
         }
 
-        [HttpGet("{productId}")]
+        [HttpGet("GetProductById/{productId}")]
         public async Task<ProductDTO> GetProductById(int productId)
         {
             var product = await productService.GetProductById(productId);

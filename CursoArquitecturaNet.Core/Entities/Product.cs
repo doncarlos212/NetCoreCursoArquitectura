@@ -12,20 +12,6 @@ namespace CursoArquitecturaNet.Core.Entities
         public string ProductName { get; set; }        
         public decimal? UnitPrice { get; set; }
         public short? UnitsInStock { get; set; }
-        public short? UnitsOnOrder { get; set; }               
-
-        public static Product Create(int productId, string name, decimal? unitPrice = null,
-                                     short? unitsInStock = null, short? unitsOnOrder = null)
-        {
-            var product = new Product
-            {
-                Id = productId,               
-                ProductName = name,
-                UnitPrice = unitPrice,
-                UnitsInStock = unitsInStock,
-                UnitsOnOrder = unitsOnOrder,                
-            };
-            return product;
-        }
+        public short? UnitsOnOrder { get; set; }                      
     }
 }
